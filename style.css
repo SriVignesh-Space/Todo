@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body .container{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to top left,rgba(244, 9, 9, 0.418),rgba(35, 20, 202, 0.456)),url(./Images/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+}
+
+.todo{
+    max-width: 40em;
+    background-color: rgba(247, 178, 183,0.5);
+    margin: 2em auto 0em; 
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 2%;  
+    animation: glow 5s ease infinite;
+}
+
+@keyframes glow{
+    0% {box-shadow: 0px 0px 30px rgb(56, 0, 58);}
+    50% {box-shadow: 0px 0px 100px rgb(141, 8, 144);}
+    100% {box-shadow: 0px 0px 30px rgb(56, 0, 58);}
+}
+.title{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(22, 0, 30);
+    padding: 15px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+.title:hover{
+    text-shadow: 0px 0px 10px rgb(56, 0, 58);
+    color: rgba(255, 255, 255, 0.578);
+}
+form>input{
+    width: 75%;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: medium;
+}
+form>button{
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #9c4d90;
+    transition: all .5s ease;
+}
+form>button:hover{
+    background-color: #3b0132;
+    color: #fff;
+    box-shadow: 0px 0px 10px #ffffff73;
+}
+form{
+    margin: .5rem .5rem 2rem .5rem ;
+    display: flex;
+    gap: .5rem;
+    justify-content: space-evenly;
+}
+.todo-element{
+    margin: 1rem;
+    border-radius: 10px;
+    padding: .5em   ;
+    background-color: rgb(247, 178, 183);
+    font-size: 1.3rem;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    justify-content: space-between  ;
+    transition: all .5s ease;
+}
+.todo-element:hover{
+    transform: scale(1.1,1.1);
+}
+input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+.todo-check{
+    width: 90%;
+}
+.close{
+    color: #3b0132;
+}
