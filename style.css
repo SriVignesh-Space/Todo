@@ -94,4 +94,5 @@ input[type=checkbox]{
 }
 .close{
     color: #3b0132;
+    cursor: pointer;
 }
